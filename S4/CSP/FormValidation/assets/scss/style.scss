@@ -1,0 +1,91 @@
+@import "node_modules/bulma/bulma.sass";
+
+@font-face {
+  font-family: "Product Sans";
+  src: url('../fonts/PSR.woff') format('woff')
+}
+
+* {
+  font-family: "Product Sans";
+}
+
+body {
+  margin: 0;
+  vertical-align: middle;
+  background-color: whitesmoke;
+}
+
+input {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.title {
+  font-size: 25px;
+  margin: 10px;
+}
+
+.container, .input-field {
+  display: flex;
+}
+
+.input-field {
+  margin: 10px;
+}
+
+.box {
+  box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.08) !important;
+}
+
+.input-field > label {
+  font-size: 13px;
+}
+
+.input-field > input {
+  margin-right: 10px;
+}
+
+.container > .header {
+  background-color: #363636;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.divField, .divRadio {
+  /*box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.08);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  line-height: 35px;
+  //border: 1px solid #363636;
+  margin: 10px;
+  //padding: 5px;
+
+  div {
+    flex: 1;
+    //margin-left: 10px;
+  }
+}
+
+.divRadio {
+  flex: 1;
+  border: 0;
+}
+
+.errorBackground {
+  box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.08);
+  //border: 1px solid #363636;
+  background-color: lightcoral;
+  color: whitesmoke;
+}
+
+.errorBackground::placeholder {
+  color: whitesmoke;
+}
+
+.control {
+  text-align: right;
+}

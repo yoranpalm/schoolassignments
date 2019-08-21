@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSP2 - API request via AJAX</title>
+    <link rel="stylesheet" type="text/css" href="assets/stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+</head>
+
+<body>
+    <div class="hero is-fullheight is-light">
+        <div class="hero-body is-centered">
+            <div class="container is-fluid">
+                <div class="column is-8-desktop is-12-touch is-offset-2-desktop">
+                    <h1 class="title has-text-centered">API request via AJAX</h1>
+                    <div class="box">
+                        <table class="table is-hoverable">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Naam</th>
+                                    <th>Brouwer</th>
+                                    <th>Type</th>
+                                    <th>Percentage</th>
+                                    <th>Prijs</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content box">
+            <div class="content" id="modalContent">
+
+            </div>
+            <button class="button is-dark editButton" style="float: left;">Bewerken</button>
+            <button class="button is-black deleteButton" style="margin-left: 10px;">Verwijderen</button>
+            <button id="modal-close" class="button is-light" style="float: right;">Sluiten</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript.js"></script>
+</body>
+
+</html>
